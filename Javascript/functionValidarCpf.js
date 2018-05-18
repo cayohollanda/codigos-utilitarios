@@ -1,39 +1,3 @@
-/*
-function validar() {
-    var cpf = document.querySelector("#cpf").value;
-    var valoresMultiplicados = [];
-    var totalSomaValoresMultiplicados = 0;
-    var resultado;
-
-    var multiplicarPrimeiroDigito = [10, 9, 8, 7, 6, 5, 4, 3, 2];
-    var flagMultiplicacaoPrimeiroDigito = 10;
-
-    var primeiroDigito;
-
-    for(var i = 0; i < cpf.length - 2; i++) {
-        var valorAtual = cpf.charAt(i);
-
-        valoresMultiplicados.push(valorAtual * flagMultiplicacaoPrimeiroDigito);
-
-        flagMultiplicacaoPrimeiroDigito--;
-    }
-
-    for(var i = 0; i < valoresMultiplicados.length; i++) {
-        totalSomaValoresMultiplicados += valoresMultiplicados[i];
-    }
-
-    var resultado = parseInt((totalSomaValoresMultiplicados * 10) % 11);
-
-    if(resultado == 10 || resultado == 11) {
-        resultado = 0;
-    }
-
-    if(resultado  == cpf.charAt(9)) {
-        document.getElementById("resultado").innerHTML = "Resultado primeiro dígito: " + resultado;
-    }
-
-}*/
-
 function validar() {
     // Buscando o CPF no formulário
     var cpf = document.querySelector("#cpf").value;
